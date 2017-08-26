@@ -2,33 +2,65 @@
 <html lang="en-us">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   	<meta charset="UTF-8">
-	<title>Basic-Portfolio</title>
+	<title>Contact</title>
 </head>
 
 <body>
-	<header>
-		<h1>Renato Zamudio Candia</h1>
-		<nav>
-			<a href="index.html">About</a>
-			<a href="contact.html">Contact</a>
-			<a href="portfolio.html">Portfolio</a>
-		</nav>
+	<header id="main-header">
+		<div class="container">
+			<a href="index.html" id="logo">Renato Zamudio Candia</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
 	</header>
-</body>
 
-<div>
-	<h3>Connect with Me</h3>
-		<a href="https://github.com/rezaca"><img src="/Users/rzc/basic-portfolio/assets/images/github.png"></a>
-		<a href="https://www.linkedin.com/in/renatozamudio/"><img src="/Users/rzc/basic-portfolio/assets/images/linkedin.png"></a>
-		<a href="https://stackoverflow.com/users/8459304/renato-zamudio-candia"><img src="/Users/rzc/basic-portfolio/assets/images/overflow.png"></a>
-</div>
+	<div id="main-content" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+			
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>	
+						<input type="text" name="name" id="name" placeholder="Your Name" required="required">	
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@mail.com" required="required">	
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>	
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+			</form>
+			
+		</section>
 
-<div>
+		<section class="sidebar">
+			<div id="connect">
+			<h2>Connect with Me</h2>
+
+				<a href="https://github.com/rezaca"><img src="assets/images/github.png" class="connect-images" alt="github"></a>
+				<a href="https://www.linkedin.com/in/renatozamudio/"><img src="assets/images/linkedin.png" class="connect-images" alt="linkedin"></a>
+				<a href="https://stackoverflow.com/users/8459304/renato-zamudio-candia"><img src="assets/images/overflow.png" class="connect-images" alt="stackoverflow"></a>
+			</div>
+		</section>
+	</div>
+
 	<footer>
-		<p>Copyright 2017 - Renato Zamudio Candia</p>
-	</footer>	
-</div>
+		<div class="container">
+			&copy; Copyright 2017 Renato Zamudio Candia
+		</div>
+	</footer>
+	<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
 
 </html>

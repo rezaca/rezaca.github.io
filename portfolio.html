@@ -2,35 +2,72 @@
 <html lang="en-us">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   	<meta charset="UTF-8">
-	<title>Basic-Portfolio</title>
+	<title>Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<h1>Renato Zamudio Candia</h1>
-		<nav>
-			<a href="index.html">About</a>
-			<a href="contact.html">Contact</a>
-			<a href="portfolio.html">Portfolio</a>
-		</nav>
+	<header id="main-header">
+		<div class="container">
+			<a href="index.html" id="logo">Renato Zamudio Candia</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
 	</header>
 
+	<div id="main-content" class="container">
+		<section class="main-section">
+			<h1>Portfolio</h1>
+			
+			<div class="portfolio">
+				<img src="assets/images/hangman.png" class="bio-image" alt="Hangman">
+				<h3>Hangman</h3>
+			</div>
 
-</body>
+			<div class="portfolio">
+				<img src="assets/images/rpg.jpg" class="bio-image" alt="RPG Game">
+				<h3>RPG Game</h3>
+			</div>
 
-<div>
-	<h3>Connect with Me</h3>
-		<a href="https://github.com/rezaca"><img src="/Users/rzc/basic-portfolio/assets/images/github.png"></a>
-		<a href="https://www.linkedin.com/in/renatozamudio/"><img src="/Users/rzc/basic-portfolio/assets/images/linkedin.png"></a>
-		<a href="https://stackoverflow.com/users/8459304/renato-zamudio-candia"><img src="/Users/rzc/basic-portfolio/assets/images/overflow.png"></a>
-</div>
+			<div class="portfolio">
+				<img src="assets/images/trivia.jpg" class="bio-image" alt="Trivia Game">
+				<h3>Trivia Game</h3>
+			</div>
 
-<div>
+			<div class="portfolio">
+				<img src="assets/images/infowidget.jpg" class="bio-image" alt="Info Widget">
+				<h3>Info Widget</h3>
+			</div>
+
+			<div class="portfolio">
+				<img src="assets/images/rock.jpg" class="bio-image" alt="Rock Paper Scissors">
+				<h3>Rock Paper Scissors</h3>
+			</div>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+			<h2>Connect with Me</h2>
+
+				<a href="https://github.com/rezaca"><img src="assets/images/github.png" class="connect-images" alt="github"></a>
+				<a href="https://www.linkedin.com/in/renatozamudio/"><img src="assets/images/linkedin.png" class="connect-images" alt="linkedin"></a>
+				<a href="https://stackoverflow.com/users/8459304/renato-zamudio-candia"><img src="assets/images/overflow.png" class="connect-images" alt="stackoverflow"></a>
+			</div>
+		</section>
+	</div>
+
 	<footer>
-			<p>Copyright 2017 - Renato Zamudio Candia</p>
+		<div class="container">
+			&copy; Copyright 2017 Renato Zamudio Candia
+		</div>
 	</footer>
-</div>
+	<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
 
 </html>
